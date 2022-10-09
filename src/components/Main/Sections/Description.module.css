@@ -1,0 +1,19 @@
+.description {
+  margin-bottom: 20px;
+}
+.description > * {
+  margin-bottom: 15px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.price > .price {
+  align-items: center;
+}
+.price > .price > p:nth-child(1) {
+  margin-right: 20px;
+}
+.price .f-price {
+  margin-right: 20px;
+}

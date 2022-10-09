@@ -1,0 +1,62 @@
+.imagesShoes {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagesShoes > img {
+  width: 100%;
+  height: 100%;
+}
+.imagesShoesThumb {
+  display: none;
+  margin-top: 20px;
+}
+.imagesShoesThumb > img {
+  width: calc(25% - 10px);
+  margin: 0 5px;
+  border: 10px solid transparent;
+  display: block;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.imagesShoesThumb > img:hover {
+  border-color: var(--Orange);
+}
+.iconPreviousNext {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.iconPreviousNext > img {
+  background-color: white;
+  padding: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 30px;
+}
+@media screen and (min-width: 750px) {
+  .imagesShoes {
+    height: 90vh;
+    flex-direction: column;
+  }
+  .imagesShoes > img {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+  }
+  .imagesShoesThumb {
+    display: flex;
+  }
+  .d_none {
+    display: none;
+  }
+  .iconPreviousNext {
+    display: none;
+  }
+}

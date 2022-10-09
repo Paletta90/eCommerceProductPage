@@ -1,13 +1,51 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --VeryVark: hsl(220, 13%, 13%);
+  --DarkGrayish: hsl(219, 9%, 45%);
+  --Grayish: hsl(220, 14%, 75%);
+  --LightGrayish: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Orange: hsl(26, 100%, 55%);
+  --Pale: hsl(25, 100%, 94%);
+  --Weigth: 400;
+  --WeigthBold: 700;
+}
+html {
+  font-size: 16px;
+  font-family: "Kumbh Sans";
+}
+body {
+  padding: 20px;
+}
+.f-small {
+  font-size: 1rem;
+  color: var(--Grayish);
+  font-weight: var(--WeigthBold);
+}
+.f-smallTitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--Orange);
+  font-weight: var(--WeigthBold);
+}
+.f-bigTitle {
+  font-size: 2.3rem;
+  font-weight: var(--WeigthBold);
+}
+.f-smallPrice {
+  font-size: 1rem;
+  color: var(--Grayish);
+  font-weight: var(--Weigth);
+}
+.f-price {
+  font-size: 1.4rem;
+  font-weight: var(--WeigthBold);
+}
+.d_none {
+  display: none;
 }

@@ -1,0 +1,8 @@
+.logo {
+  width: 125px;
+}
+@media screen and (min-width: 750px) {
+  .logo {
+    width: 190px;
+  }
+}

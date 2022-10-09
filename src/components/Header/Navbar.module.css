@@ -1,0 +1,32 @@
+nav {
+  overflow: hidden;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+.dropdown > img {
+  margin-right: 20px;
+}
+.displayLaptop {
+  display: none;
+}
+.displaySmartphone {
+  display: block;
+}
+@media screen and (min-width: 750px) {
+  .dropdown > img {
+    display: none;
+  }
+  nav .displayLaptop {
+    display: flex;
+  }
+  nav .displaySmartphone {
+    display: none;
+  }
+}

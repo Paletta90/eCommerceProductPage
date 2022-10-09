@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import DataShoesProvider from "./store/DataShoesProvider";
 
 function App() {
+  const [shownCart, setShownCart] = useState(false);
+  const showCart = () => {
+    setShownCart(!shownCart);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataShoesProvider>
+      <Header showCart={showCart} />
+      <Main cartIsClicked={shownCart} />
+    </DataShoesProvider>
   );
 }
 
